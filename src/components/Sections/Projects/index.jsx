@@ -4,6 +4,7 @@ import { Slide } from "react-awesome-reveal";
 import { Element as ScrollElement } from "react-scroll";
 import clima from "./assets/clima.png";
 import loopstudio from "./assets/loopstudio.png";
+import shoppingCart from "./assets/shoppingCart.png"
 import styledImg from "../../../../public/assets/techs/styled.png";
 import materialImg from "../../../../public/assets/techs/material-ui.png";
 import reactImg from "../../../../public/assets/techs/react.png";
@@ -11,6 +12,7 @@ import axiosImg from "../../../../public/assets/techs/axios.png";
 import htmlImg from "../../../../public/assets/techs/html.png";
 import cssImg from "../../../../public/assets/techs/css.png";
 import jsImg from "../../../../public/assets/techs/js.png";
+import nextImg from "../../../../public/assets/techs/nextjs.png";
 import Card from "./Card";
 import { BaseSection, Title } from "../BaseElements";
 
@@ -66,6 +68,18 @@ const Projects = () => {
               <TechImg alt="Html logo" src={htmlImg} />
               <TechImg alt="Css logo" src={cssImg} />
               <TechImg alt="Javascript logo" src={jsImg} />
+            </Techs>
+          </Card>
+          <Card
+            projectImg={shoppingCart}
+            alt= "Shopping cart Website image"
+            hrefDeploy="https://shopping-cart-ochre-seven.vercel.app/"
+            hrefGit="https://github.com/bricharddev/shopping-cart"
+          >
+            <Techs>
+              <TechImg alt="Html logo" src={nextImg} />
+              <TechImg alt="Css logo" src={axiosImg} />
+              <TechImg alt="Javascript logo" src={styledImg} />
             </Techs>
           </Card>
         </CardList>
